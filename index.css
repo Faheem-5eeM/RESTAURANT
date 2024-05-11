@@ -32,9 +32,9 @@ body {
 }
 
 .logo {
-  height: 100px; /* Increase logo height */
-  max-width: 100%; /* Ensure the logo scales properly */
-  object-fit: contain; /* Ensure the logo retains its aspect ratio */
+  height: 100px; 
+  max-width: 100%; 
+  object-fit: contain; 
 }
 
 .nav-container {
@@ -80,23 +80,23 @@ body {
 @media (max-width: 768px) {
   .header-container {
     flex-direction: column;
-    align-items: center; /* Center-align elements for smaller screens */
+    align-items: center; 
     gap: 1rem;
-    padding: 1rem; /* Additional padding for mobile */
+    padding: 1rem; 
   }
 
   .nav-container {
-    order: 2; /* Move navigation below the logo */
-    text-align: center; /* Center-align for smaller screens */
+    order: 2; 
+    text-align: center; 
   }
 
   .nav-list {
     flex-direction: column;
-    gap: 0.5rem; /* Smaller gap for mobile */
+    gap: 0.5rem; 
   }
 
   .order-online {
-    order: 3; /* Move button to the bottom for mobile */
+    order: 3; 
   }
 }
 
@@ -105,7 +105,7 @@ body {
 .carousel {
   position: relative;
   width: 100%;
-  height: 600px; /* Set a fixed height for the carousel */
+  height: 600px; 
   overflow: hidden;
 }
 
@@ -117,10 +117,10 @@ body {
 }
 
 .carousel-slide {
-  flex: 1; /* Each slide should take the full width of the carousel */
-  opacity: 0; /* Start with slides hidden */
-  transition: opacity 1.5s ease-in-out; /* Smooth transition for fading */
-  position: absolute; /* Use absolute positioning for overlap */
+  flex: 1; 
+  opacity: 0; 
+  transition: opacity 1.5s ease-in-out; 
+  position: absolute; 
   top: 0;
   left: 0;
 }
@@ -128,15 +128,15 @@ body {
 .carousel-slide img {
   width: 100%; 
   height: 100%;
-  object-fit: cover; /* Maintain aspect ratio and fill the carousel */
+  object-fit: cover;
 }
 
 /* Display the first slide initially */
 .carousel-slide:first-child {
-  opacity: 1; /* The first slide is visible initially */
+  opacity: 1; 
 }
 
-#menu1, #chefs ,#aboutus{
+#menu1, #chefs ,#aboutus, #location, #RateUs{
   color: #E70870;
   position: relative;
   text-align: center;
@@ -145,11 +145,11 @@ body {
 
 @media (max-width: 480px) {
   .carousel {
-    height: 200px; /* Adjust carousel height for smaller screens */
+    height: 200px; 
   }
 
   .layer {
-    font-size: 5vw; /* Adjust font size */
+    font-size: 5vw; 
   }
 }
 
@@ -161,9 +161,9 @@ body {
   text-align: center;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 4vw; /* Use responsive units */
-  padding: 0 20px; /* Add padding to prevent overflow */
-  color: #E70870; /* Adjusted text color */
+  font-size: 4vw; 
+  padding: 0 20px; 
+  color: #E70870; 
   background: rgba(0, 0, 0, 0.5); 
 }
 
@@ -179,9 +179,9 @@ body {
 /* Grid layout for menu items */
 .menu-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Three columns by default */
-  column-gap: 16px; /* Gap between columns */
-  row-gap: 40px; /* Gap between rows */
+  grid-template-columns: repeat(3, 1fr); 
+  column-gap: 16px; 
+  row-gap: 40px; 
 }
 
 
@@ -193,27 +193,27 @@ body {
   background: white;
   border: 1px solid #ddd;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  text-align: center; /* Center-align text */
-  padding: 20px; /* Padding inside the item */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  text-align: center; 
+  padding: 20px; 
 }
 
 .menu-item img {
   width: 100%;
   height: 150px;
-  object-fit: cover; /* Maintain aspect ratio */
-  border-radius: 8px; /* Rounded corners */
+  object-fit: cover; 
+  border-radius: 8px; 
 }
 
 .menu-title {
   font-weight: 600;
   font-size: 1.25em;
-  color: #333; /* Title color */
-  margin-top: 10px; /* Space above title */
+  color: #333; 
+  margin-top: 10px; 
 }
 
 .menu-description {
-  font-size: 1em; /* Standard font size for descriptions */
+  font-size: 1em; 
   color: #666;
   margin-top: 10px;
 }
@@ -221,13 +221,13 @@ body {
 /* Responsive layout */
 @media (max-width: 768px) {
   .menu-grid {
-    grid-template-columns: repeat(2, 1fr); /* Two columns for smaller screens */
+    grid-template-columns: repeat(2, 1fr); 
   }
 }
 
 @media (max-width: 480px) {
   .menu-grid {
-    grid-template-columns: 1fr; /* Single column for the smallest screens */
+    grid-template-columns: 1fr; 
   }
 }
 
@@ -240,9 +240,9 @@ body {
 /* Grid layout for menu items */
 .chef-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Three columns by default */
-  column-gap: 16px; /* Gap between columns */
-  row-gap: 40px; /* Gap between rows */
+  grid-template-columns: repeat(3, 1fr); 
+  column-gap: 16px; 
+  row-gap: 40px; 
 }
 
 
@@ -254,27 +254,27 @@ body {
   background: white;
   border: 1px solid #ddd;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  text-align: center; /* Center-align text */
-  padding: 20px; /* Padding inside the item */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center; 
+  padding: 20px;
 }
 
 .chef-item img {
   width: 100%;
   height: 300px;
-  object-fit: cover; /* Maintain aspect ratio */
-  border-radius: 8px; /* Rounded corners */
+  object-fit: cover;
+  border-radius: 8px; 
 }
 
 .chef-title {
   font-weight: 600;
   font-size: 1.25em;
-  color: #333; /* Title color */
-  margin-top: 10px; /* Space above title */
+  color: #333; 
+  margin-top: 10px; 
 }
 
 .chef-description {
-  font-size: 1em; /* Standard font size for descriptions */
+  font-size: 1em; 
   color: #666;
   margin-top: 10px;
 }
@@ -282,48 +282,167 @@ body {
 /* Responsive layout */
 @media (max-width: 768px) {
   .chef-grid {
-    grid-template-columns: repeat(2, 1fr); /* Two columns for smaller screens */
+    grid-template-columns: repeat(2, 1fr); 
   }
 }
 
 @media (max-width: 480px) {
   .chef-grid {
-    grid-template-columns: 1fr; /* Single column for the smallest screens */
+    grid-template-columns: 1fr; 
   }
 }
 
 
 /* ABOUT US */
 
-/* CSS for the 'About Us' section */
+
 
 /* Container styling */
 .about-us-content {
-  background-color: #f9f9f9; /* Light background color for contrast */
-  padding: 40px; /* Add padding for spacing */
-  margin: 40px auto; /* Center the section horizontally */
-  max-width: 800px; /* Limit the width to maintain readability */
-  border-radius: 8px; /* Rounded corners for a modern look */
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  background-color: #f9f9f9; 
+  padding: 40px; 
+  margin: 40px auto; 
+  max-width: 800px; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1); 
   text-align: justify;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Paragraph styling */
 .about-us-content p {
-  font-family: 'Poppins', sans-serif; /* Use the font defined in your HTML */
-  font-size: 18px; /* Set a comfortable font size */
-  line-height: 1.6; /* Increase line spacing for readability */
-  color: #333; /* Dark gray color for text */
-  margin-bottom: 20px; /* Space between paragraphs */
+  font-family: 'Poppins', sans-serif; 
+  font-size: 18px; 
+  line-height: 1.6; 
+  color: #333; 
+  margin-bottom: 20px; 
 }
 
 /* Title styling */
 .about-us-content h1 {
   font-family: 'Poppins', sans-serif;
-  font-size: 24px; /* Larger font size for emphasis */
-  color: #333; /* Match text color */
-  text-align: center; /* Center-align the title */
-  margin-bottom: 20px; /* Space below the title */
+  font-size: 24px; 
+  color: #333; 
+  text-align: center; 
+  margin-bottom: 20px; 
 }
 
-/* Additional styling for any specific elements you might add */
+
+
+
+/* RATE US */
+.rating {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 0.3rem;
+  --stroke: #666;
+  --fill: #ffc73a;
+   justify-content: center;
+}
+
+.rating input {
+  appearance: unset;
+}
+
+.rating label {
+  cursor: pointer;
+}
+
+.rating svg {
+  width: 2rem;
+  height: 2rem;
+  overflow: visible;
+  fill: transparent;
+  stroke: var(--stroke);
+  stroke-linejoin: bevel;
+  stroke-dasharray: 12;
+  animation: idle 4s linear infinite;
+  transition: stroke 0.2s, fill 0.5s;
+}
+
+@keyframes idle {
+  from {
+    stroke-dashoffset: 24;
+  }
+}
+
+.rating label:hover svg {
+  stroke: var(--fill);
+}
+
+.rating input:checked ~ label svg {
+  transition: 0s;
+  animation: idle 4s linear infinite, yippee 0.75s backwards;
+  fill: var(--fill);
+  stroke: var(--fill);
+  stroke-opacity: 0;
+  stroke-dasharray: 0;
+  stroke-linejoin: miter;
+  stroke-width: 8px;
+}
+
+@keyframes yippee {
+  0% {
+    transform: scale(1);
+    fill: var(--fill);
+    fill-opacity: 0;
+    stroke-opacity: 1;
+    stroke: var(--stroke);
+    stroke-dasharray: 10;
+    stroke-width: 1px;
+    stroke-linejoin: bevel;
+  }
+
+  30% {
+    transform: scale(0);
+    fill: var(--fill);
+    fill-opacity: 0;
+    stroke-opacity: 1;
+    stroke: var(--stroke);
+    stroke-dasharray: 10;
+    stroke-width: 1px;
+    stroke-linejoin: bevel;
+  }
+
+  30.1% {
+    stroke: var(--fill);
+    stroke-dasharray: 0;
+    stroke-linejoin: miter;
+    stroke-width: 8px;
+  }
+
+  60% {
+    transform: scale(1.2);
+    fill: var(--fill);
+  }
+}
+
+/* FEEDBACk */
+#feedback-form{
+    text-align: center;
+    padding-top: 2em;
+}
+
+#feedback{
+  font-size: 2em;
+  text-align: center;
+  margin-top: 0.5em;
+}
+
+#buttons{
+  background-color: #E70870;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1em;
+  border-radius: 5px;
+  font-weight: bold;
+  height: 2.5em;
+  font-family: 'Poppins', sans-serif;
+}
+
+#label1{
+  font-size: 1.5em;
+  font-family: 'Poppins', sans-serif;
+}

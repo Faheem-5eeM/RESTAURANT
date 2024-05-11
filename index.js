@@ -18,3 +18,15 @@ function previousSlide() {
 }
 
 setInterval(nextSlide, 2500); // Change the interval to control the timing of the fade
+
+const ratingStars = document.querySelectorAll('.rating input[type="radio"]');
+const feedbackForm = document.getElementById('feedback-form');
+
+ratingStars.forEach(star => {
+  star.addEventListener('change', () => {
+    if (star.checked) {
+      feedbackForm.style.display = 'block';
+    }
+  });
+});
+

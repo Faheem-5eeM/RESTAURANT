@@ -18,10 +18,11 @@
       </div>
       <nav class="nav-container">
         <ul class="nav-list">
+          <li><a href="#location">LOCATION</a></li>
           <li><a href="#aboutus">ABOUT US</a></li>
           <li><a href="#menu1">MENU</a></li>
           <li><a href="#chefs">CHEFS</a></li>
-          <li><a href="#locations">LOCATIONS</a></li>
+          <li><a href="#RateUs">RATE US</a></li>
         </ul>
       </nav>
       <button class="order-online">ORDER ONLINE</button>
@@ -160,8 +161,45 @@
           We are more than just a restaurant; we are a gathering place for celebrations, casual dinners, and everything in between. Whether you're visiting us for a special occasion or a casual meal, we look forward to welcoming you and making your experience memorable. Thank you for choosing us, and we can't wait to serve you.
         </p>
       </div>
-      
 
+       <h1 id="location">LOCATION</h1>
+      <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.575442162403!2d74.84112357483963!3d12.870675587435496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba35b502448671d%3A0xfd5bc2bc3e7ce717!2sPink%20Salt%20Resto%20Cafe!5e0!3m2!1sen!2sin!4v1715431057168!5m2!1sen!2sin" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+
+      <!-- RATE US -->
+      <h1 id="RateUs">RATE US</h1>
+        <div class="rating">
+          <input type="radio" id="star-1" name="star-radio" value="star-1">
+          <label for="star-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+          </label>
+          <input type="radio" id="star-2" name="star-radio" value="star-1">
+          <label for="star-2">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+          </label>
+          <input type="radio" id="star-3" name="star-radio" value="star-1">
+          <label for="star-3">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+          </label>
+          <input type="radio" id="star-4" name="star-radio" value="star-1">
+          <label for="star-4">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+          </label>
+          <input type="radio" id="star-5" name="star-radio" value="star-1">
+          <label for="star-5">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+          </label>
+      </div>
+      
+      <div id="feedback-form" style="display: none;">
+        <form>
+          <label id="label1" for="feedback">Your Feedback:</label><br>
+          <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea><br>
+          <button id="buttons" type="submit">Submit</button>
+        </form>
+      </div>
 
   <script src="index.js"></script>
 </body>
