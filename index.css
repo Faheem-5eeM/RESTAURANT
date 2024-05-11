@@ -1,0 +1,329 @@
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  height: 10000px;
+
+}
+
+/* Header Styles */
+.header {
+  background-color: #ffffff;
+  padding: 1rem;
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.logo-container {
+  flex: 1;
+  text-align: left;
+}
+
+.logo {
+  height: 100px; /* Increase logo height */
+  max-width: 100%; /* Ensure the logo scales properly */
+  object-fit: contain; /* Ensure the logo retains its aspect ratio */
+}
+
+.nav-container {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list a {
+  color: #000;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.nav-list a:hover {
+  color: #E70870;
+}
+
+.order-online {
+  background-color: #E70870;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  height: 4em;
+}
+
+.order-online:hover {
+  background-color: rgb(59, 189, 107);
+}
+
+/* Responsive Layouts with Media Queries */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: center; /* Center-align elements for smaller screens */
+    gap: 1rem;
+    padding: 1rem; /* Additional padding for mobile */
+  }
+
+  .nav-container {
+    order: 2; /* Move navigation below the logo */
+    text-align: center; /* Center-align for smaller screens */
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 0.5rem; /* Smaller gap for mobile */
+  }
+
+  .order-online {
+    order: 3; /* Move button to the bottom for mobile */
+  }
+}
+
+
+/* Image Bar */
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 600px; /* Set a fixed height for the carousel */
+  overflow: hidden;
+}
+
+.carousel-slides {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.carousel-slide {
+  flex: 1; /* Each slide should take the full width of the carousel */
+  opacity: 0; /* Start with slides hidden */
+  transition: opacity 1.5s ease-in-out; /* Smooth transition for fading */
+  position: absolute; /* Use absolute positioning for overlap */
+  top: 0;
+  left: 0;
+}
+
+.carousel-slide img {
+  width: 100%; 
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio and fill the carousel */
+}
+
+/* Display the first slide initially */
+.carousel-slide:first-child {
+  opacity: 1; /* The first slide is visible initially */
+}
+
+#menu1, #chefs ,#aboutus{
+  color: #E70870;
+  position: relative;
+  text-align: center;
+  font-size: 3em;
+}
+
+@media (max-width: 480px) {
+  .carousel {
+    height: 200px; /* Adjust carousel height for smaller screens */
+  }
+
+  .layer {
+    font-size: 5vw; /* Adjust font size */
+  }
+}
+
+
+.layer {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 4vw; /* Use responsive units */
+  padding: 0 20px; /* Add padding to prevent overflow */
+  color: #E70870; /* Adjusted text color */
+  background: rgba(0, 0, 0, 0.5); 
+}
+
+
+
+/* MENU */
+
+.menu-container {
+  padding: 20px;
+  background: #f8f8f8;
+}
+
+/* Grid layout for menu items */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns by default */
+  column-gap: 16px; /* Gap between columns */
+  row-gap: 40px; /* Gap between rows */
+}
+
+
+.menu-item:hover img{
+  opacity: 0.5;
+}
+
+.menu-item {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  text-align: center; /* Center-align text */
+  padding: 20px; /* Padding inside the item */
+}
+
+.menu-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover; /* Maintain aspect ratio */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.menu-title {
+  font-weight: 600;
+  font-size: 1.25em;
+  color: #333; /* Title color */
+  margin-top: 10px; /* Space above title */
+}
+
+.menu-description {
+  font-size: 1em; /* Standard font size for descriptions */
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .menu-grid {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-grid {
+    grid-template-columns: 1fr; /* Single column for the smallest screens */
+  }
+}
+
+/* CHEF */
+.chef-container {
+  padding: 20px;
+  background: #f8f8f8;
+}
+
+/* Grid layout for menu items */
+.chef-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns by default */
+  column-gap: 16px; /* Gap between columns */
+  row-gap: 40px; /* Gap between rows */
+}
+
+
+.chef-item:hover img{
+  opacity: 0.5;
+}
+
+.chef-item {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  text-align: center; /* Center-align text */
+  padding: 20px; /* Padding inside the item */
+}
+
+.chef-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover; /* Maintain aspect ratio */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.chef-title {
+  font-weight: 600;
+  font-size: 1.25em;
+  color: #333; /* Title color */
+  margin-top: 10px; /* Space above title */
+}
+
+.chef-description {
+  font-size: 1em; /* Standard font size for descriptions */
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .chef-grid {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .chef-grid {
+    grid-template-columns: 1fr; /* Single column for the smallest screens */
+  }
+}
+
+
+/* ABOUT US */
+
+/* CSS for the 'About Us' section */
+
+/* Container styling */
+.about-us-content {
+  background-color: #f9f9f9; /* Light background color for contrast */
+  padding: 40px; /* Add padding for spacing */
+  margin: 40px auto; /* Center the section horizontally */
+  max-width: 800px; /* Limit the width to maintain readability */
+  border-radius: 8px; /* Rounded corners for a modern look */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  text-align: justify;
+}
+
+/* Paragraph styling */
+.about-us-content p {
+  font-family: 'Poppins', sans-serif; /* Use the font defined in your HTML */
+  font-size: 18px; /* Set a comfortable font size */
+  line-height: 1.6; /* Increase line spacing for readability */
+  color: #333; /* Dark gray color for text */
+  margin-bottom: 20px; /* Space between paragraphs */
+}
+
+/* Title styling */
+.about-us-content h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px; /* Larger font size for emphasis */
+  color: #333; /* Match text color */
+  text-align: center; /* Center-align the title */
+  margin-bottom: 20px; /* Space below the title */
+}
+
+/* Additional styling for any specific elements you might add */
