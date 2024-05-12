@@ -11,7 +11,7 @@ body {
 .header {
   background-color: #ffffff;
   padding: 1rem;
-  /* position: fixed; */
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -113,6 +113,10 @@ body {
     gap: 1rem;
     padding: 1rem; 
   }
+  .header{
+    position: relative;
+  } 
+
 
   .nav-container {
     order: 2; 
