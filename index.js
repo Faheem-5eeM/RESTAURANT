@@ -30,3 +30,9 @@ ratingStars.forEach(star => {
   });
 });
 
+$(document).ready(function() {
+  $('.carousel').carousel({
+    interval: 3000 // Change the number to adjust the interval time in milliseconds
+  });
+});
+

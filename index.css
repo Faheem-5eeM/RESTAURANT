@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f9f9f9;
-  height: 100%;
+  height: 10000em;
 }
 
 /* Header Styles */
@@ -487,6 +487,7 @@ font-size: 1em;
 border-radius: 5px;
 font-weight: bold;
 height: 2.5em;
+text-align: center;
 font-family: 'Poppins', sans-serif;
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adding shadow */
 }
@@ -499,4 +500,143 @@ font-family: 'Poppins', sans-serif;
 
 
 
+/* FOOTER */
+/* Footer Styles */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 2rem 0; /* Adjusted padding */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
 
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Centered vertically */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.contact-info, .social-media {
+  flex: 1;
+}
+
+.contact-info h3, .social-media h3 {
+  font-size: 1em; /* Adjusted font size */
+  margin-bottom: 0.5rem; /* Adjusted margin */
+}
+
+.contact-info p {
+  margin-bottom: 0.25rem; /* Adjusted margin */
+}
+
+.social-media-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.social-media-list li {
+  width: 30px; /* Adjusted width */
+  height: 30px; /* Adjusted height */
+}
+
+.social-media-list img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .footer {
+    padding-top: 0.1em;
+    padding-bottom: 0.1em; /* Decreased padding for smaller screens */
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.1rem; /* Adjusted gap */
+  }
+
+  .contact-info, .social-media {
+    text-align: center;
+  }
+
+  .contact-info h3, .social-media h3 {
+    font-size: 0.8em; /* Decreased font size for smaller screens */
+  }
+}
+
+
+/* UIVERSE.io - for social media logo */
+
+.socials-container {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  padding: 20px 40px;
+  background-color: #333333;
+}
+.social {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid rgb(194, 194, 194);
+}
+.twitter:hover {
+  background: linear-gradient(45deg, #66757f, #00acee, #36daff, #dbedff);
+}
+.facebook:hover {
+  background: linear-gradient(45deg, #134ac0, #316ff6, #78a3ff);
+}
+.google-plus:hover {
+  background: linear-gradient(45deg, #872419, #db4a39, #ff7061);
+}
+.instagram:hover {
+  background: #f09433;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+.social svg {
+  fill: white;
+  height: 20px;
+}
