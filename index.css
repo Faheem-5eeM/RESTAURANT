@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f9f9f9;
-  height: 10000em;
+  height: 290em;
 }
 
 /* Header Styles */
@@ -116,8 +116,11 @@ body {
   .header{
     position: relative;
   } 
-
-
+  
+  body{
+    height: 560em;
+  }
+  
   .nav-container {
     order: 2; 
     text-align: center; 
